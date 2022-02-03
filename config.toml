@@ -1,0 +1,50 @@
+baseURL = "http://localhost:1313"
+title = "Example website"
+theme = "hugo-gravel"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+enableEmoji = true
+
+[params]
+author = "byteski"
+description = "Personal website example"
+keywords = "blog"
+avatarURL = ""
+dateFormat = "January 2, 2006"
+since = 2022
+colorScheme = "dark"
+hideColorSchemeToggle = false
+blurbContent = [
+  'Hello there! I am Byteski.',
+  'I am a software developer, currently working mostly with TypeScript, React and Node ecosystems.',
+  'I write a blog about topics that interest me most: programming languages in general, TypeScript, testing, writing and other great stuff.'
+]
+
+[taxonomies]
+tag = "tags"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "Home"
+weight = 1
+url = "/"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 2
+url = "about/"
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 3
+url = "blog/"
+
+[[languages.en.menu.main]]
+name = "Notes"
+weight = 4
+url = "notes/"
+
+

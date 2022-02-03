@@ -1,0 +1,7 @@
+[submodule "themes/hugo-gravel"]
+	path = themes/hugo-gravel
+	url = https://github.com/byteski/hugo-gravel
+[submodule "content"]
+	path = content
+	url = https://github.com/byteski/notes
+  branch = "hugo-structure"
