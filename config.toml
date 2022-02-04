@@ -3,8 +3,8 @@ title = "Example website"
 theme = "hugo-gravel"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 20
 enableEmoji = true
+paginate = 6
 
 [params]
 author = "byteski"
@@ -20,9 +20,42 @@ blurbContent = [
   'I am a software developer, currently working mostly with TypeScript, React and Node ecosystems.',
   'I write a blog about topics that interest me most: programming languages in general, TypeScript, testing, writing and other great stuff.'
 ]
+sidePanelTags = [
+  'typescript',
+  'typescriptbook',
+  'node',
+  'vim',
+  'linux'
+]
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    style = 'monokai'
+    tabWidth = 4
 
 [taxonomies]
 tag = "tags"
+
+[[params.social]]
+name = "Twitter"
+icon = "fa fa-twitter"
+weight = 1
+url = "https://twitter.com/byteski"
+
+[[params.social]]
+name = "GitHub"
+icon = "fa fa-github"
+weight = 2
+url = "https://github.com/byteski"
 
 [languages.en]
 languageName = ":uk:"
