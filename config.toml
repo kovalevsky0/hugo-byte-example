@@ -10,9 +10,9 @@ paginate = 6
 author = "byteski"
 description = "Personal website example"
 keywords = "blog"
-avatarURL = "images/avatar.jpg"
-favicon_32 = "images/favicon.png"
-favicon_16 = "images/favicon.png"
+avatarURL = "/images/avatar.jpg"
+favicon_32 = "/images/favicon.png"
+favicon_16 = "/images/favicon.png"
 dateFormat = "January 2, 2006"
 since = 2022
 colorScheme = "dark"
@@ -29,6 +29,7 @@ sidePanelTags = [
   'vim',
   'linux'
 ]
+summaryLength = 100
 
 [markup]
   [markup.highlight]
