@@ -1,3 +1,4 @@
-# Hugo Gravel Example
+# Hugo Byte Example
 
-Example website for [Hugo Gravel theme](https://github.com/byteski/hugo-gravel)
+Example website for [Hugo Byte theme](https://github.com/byteski/hugo-byte)
+

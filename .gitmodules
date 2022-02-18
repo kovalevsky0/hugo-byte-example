@@ -1,6 +1,6 @@
-[submodule "themes/hugo-gravel"]
-	path = themes/hugo-gravel
-	url = https://github.com/byteski/hugo-gravel
+[submodule "themes/hugo-byte"]
+	path = themes/hugo-byte
+	url = https://github.com/byteski/hugo-byte
 [submodule "content"]
 	path = content
 	url = https://github.com/byteski/notes

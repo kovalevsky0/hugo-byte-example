@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"
 title = "Example website"
-theme = "hugo-gravel"
+theme = "hugo-byte"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
