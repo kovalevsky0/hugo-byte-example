@@ -1,5 +1,5 @@
 baseURL = "http://localhost:1313"
-title = "Example website"
+title = "byte.ski:~#"
 theme = "hugo-byte"
 languageCode = "en"
 defaultContentLanguage = "en"
