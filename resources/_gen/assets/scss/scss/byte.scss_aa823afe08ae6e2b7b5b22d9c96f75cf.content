@@ -3289,7 +3289,7 @@ body {
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
-  background-color: #2B2A2D;
+  background-color: #111827;
   color: #e2e2e2;
   /* nested ul */ }
   body h1,
@@ -3338,8 +3338,7 @@ body {
   padding: 0 30px; }
 
 .header {
-  width: 100%;
-  background-color: #1c1c1d; }
+  width: 100%; }
 
 .header__inner {
   width: 100%;
