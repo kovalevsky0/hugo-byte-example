@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"
 title = "byte.ski:~#"
-theme = "hugo-byte"
+theme = "hugo-byte-local"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
@@ -13,7 +13,8 @@ keywords = "blog"
 avatarURL = "/images/avatar.jpg"
 favicon_32 = "/images/favicon.png"
 favicon_16 = "/images/favicon.png"
-dateFormat = "January 2, 2006"
+defaultImage = "/images/default-image.png"
+dateFormat = "02/01/2006"
 since = 2022
 colorScheme = "dark"
 hideColorSchemeToggle = false
@@ -30,6 +31,12 @@ sidePanelTags = [
   'linux'
 ]
 summaryLength = 100
+disable_comments = false
+
+[params.utterances]
+repo = "byteski/byteski-comments"
+issueTerm = "pathname"
+theme = "github-dark"
 
 [markup]
   [markup.highlight]
@@ -67,20 +74,24 @@ languageName = ":uk:"
 name = "Home"
 weight = 1
 url = "/"
+pre = "<i class='fa fa-home'></i>"
 
 [[languages.en.menu.main]]
 name = "About"
 weight = 2
 url = "about/"
+pre = "<i class='fa fa-user'></i>"
 
 [[languages.en.menu.main]]
 name = "Blog"
 weight = 3
 url = "blog/"
+pre = "<i class='fa fa-book'></i>"
 
 [[languages.en.menu.main]]
 name = "Notes"
 weight = 4
 url = "notes/"
+pre = "<i class='fa fa-archive'></i>"
 
 

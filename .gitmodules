@@ -1,7 +1,7 @@
 [submodule "content"]
 	path = content
 	url = https://github.com/byteski/notes
-  branch = "hugo-structure"
+  branch = "hugo-example"
 [submodule "themes/hugo-byte"]
 	path = themes/hugo-byte
 	url = https://github.com/byteski/hugo-byte
