@@ -3231,9 +3231,20 @@ body.colorscheme-dark {
   max-width: 900px;
   width: 100%;
   margin: 3rem auto 3rem auto; }
+  .greeting a:not(.greeting__read-more) {
+    color: #f4f4f4;
+    font-weight: bold;
+    border-bottom: 2px solid #fa9312; }
+    .greeting a:not(.greeting__read-more):hover, .greeting a:not(.greeting__read-more):active {
+      background: #fa9312;
+      color: #111827; }
   .greeting h1 {
     font-weight: bold;
     color: #e5ad11; }
+    .greeting h1 span {
+      background: #1a3162;
+      padding: 3px 14px;
+      color: #f4f4f4; }
   .greeting > img {
     margin: 2rem 0 0 2rem; }
   .greeting__read-more {
@@ -4118,5 +4129,62 @@ ul {
 /* GenericTraceback */
 /* GenericUnderline */
 /* TextWhitespace */
+.subscription {
+  background: #090e1a;
+  padding: 25px 25px 35px 25px;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+  border: 2px solid #1f2938;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .subscription a {
+    color: #f4f4f4;
+    border-bottom: 2px solid #fa9312; }
+    .subscription a:hover, .subscription a:active {
+      background: #fa9312;
+      color: #090e1a; }
+  .subscription h3 {
+    font-weight: bold;
+    margin-bottom: 1rem; }
+    .subscription h3 i {
+      color: #5c55c9; }
+  .subscription form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; }
+    .subscription form input {
+      padding: 14px 20px;
+      background: #1f2938;
+      border: none;
+      outline: none;
+      color: #f4f4f4;
+      border-radius: 4px 0 0 4px;
+      height: 46px;
+      max-width: 350px;
+      width: 100%; }
+    .subscription form button {
+      height: 46px;
+      border-radius: 0 4px 4px 0;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: bold;
+      background: #1a3162; }
+      .subscription form button:hover, .subscription form button:active {
+        background: #f4f4f4;
+        color: #090e1a; }
+  .subscription__success-msg {
+    display: none; }
+    .subscription__success-msg i {
+      color: #4db140; }
+    .subscription__success-msg_visible {
+      display: block; }
+  .subscription__failure-msg {
+    display: none; }
+    .subscription__failure-msg i {
+      color: #c9557a; }
+    .subscription__failure-msg_visible {
+      display: block; }
 
 /*# sourceMappingURL=byte-dark.css.map */

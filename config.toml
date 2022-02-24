@@ -18,10 +18,10 @@ dateFormat = "02/01/2006"
 since = 2022
 colorScheme = "dark"
 hideColorSchemeToggle = false
-greetingTitle = "👋 Hey, I'm @byteski"
+greetingTitle = "👋 Hey, I'm <span>@byteski</span>"
 blurbContent = [
-  'I am a software developer, based in 🇪🇺 Europe',
-  'I write a blog about topics that interest me most: programming languages in general, TypeScript, testing, writing and other great stuff.'
+  'I am a software developer based in 🇪🇺 Europe',
+  'I write a blog about topics that interest me most: programming languages in general, <a href="/tags/typescript">TypeScript</a>, testing, writing and other great stuff.'
 ]
 sidePanelTags = [
   'typescript',
@@ -32,6 +32,14 @@ sidePanelTags = [
 ]
 summaryLength = 100
 disable_comments = false
+enableTwemoji = false
+
+[params.subscription]
+title = "Subscribe to the <a href='/newsletter'>newsletter</a>"
+description = "Get a once-per-week email with my latest content. By subscribing to this newsletter you will also be the first to receive last updates of my <a href='/books'>eBooks</a> and courses."
+endpoint = "https://app.convertkit.com/forms/2313117/subscriptions"
+successMessage = "Success! Now check your email to confirm your subscription."
+failureMessage = "Oops, Something went wrong! Try again."
 
 [params.utterances]
 repo = "byteski/byteski-comments"
