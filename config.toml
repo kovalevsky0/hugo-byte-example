@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"
 title = "byte.ski:~#"
-theme = "hugo-byte-local"
+theme = "hugo-byte"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
