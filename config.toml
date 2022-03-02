@@ -5,6 +5,7 @@ languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
 paginate = 6
+contentDir = 'content'
 
 [params]
 author = "byteski"
@@ -20,7 +21,7 @@ colorScheme = "dark"
 hideColorSchemeToggle = false
 greetingTitle = "👋 Hey, I'm <span>@byteski</span>"
 blurbContent = [
-  'I am a software developer based in 🇪🇺 Europe',
+  'I am a software developer based in Europe',
   'I write a blog about topics that interest me most: programming languages in general, <a href="/tags/typescript">TypeScript</a>, testing, writing and other great stuff.'
 ]
 sidePanelTags = [
