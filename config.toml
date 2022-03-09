@@ -1,11 +1,11 @@
 baseURL = "http://localhost:1313"
 title = "byte.ski:~#"
-theme = "hugo-byte"
+theme = "hugo-byte-local"
 languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
 paginate = 6
-contentDir = 'content'
+# contentDir = 'content'
 
 [params]
 author = "byteski"
@@ -80,25 +80,25 @@ url = "https://github.com/byteski"
 languageName = ":uk:"
 
 [[languages.en.menu.main]]
-name = "Home"
+name = "~/"
 weight = 1
 url = "/"
 pre = "<i class='fa fa-home color-green'></i>"
 
 [[languages.en.menu.main]]
-name = "About"
+name = "about.md"
 weight = 2
 url = "about/"
 pre = "<i class='fa fa-user color-skyblue'></i>"
 
 [[languages.en.menu.main]]
-name = "Blog"
+name = "blog/"
 weight = 3
 url = "blog/"
 pre = "<i class='fa fa-book color-pink'></i>"
 
 [[languages.en.menu.main]]
-name = "Notes"
+name = "notes/"
 weight = 4
 url = "notes/"
 pre = "<i class='fa fa-archive color-orange'></i>"
