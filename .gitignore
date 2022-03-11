@@ -1,3 +1,5 @@
 /themes/hugo-gravel-local
 public
 *.lock
+
+**/*.DS_Store
