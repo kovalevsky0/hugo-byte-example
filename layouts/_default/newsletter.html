@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+    <head>
+        {{ partial "head" . }}
+
+        <link rel="stylesheet" href="/css/custom.css">
+    </head>
+
+  {{ $csClass := "colorscheme-light" }}
+  {{ if eq .Site.Params.colorScheme "dark" }}
+    {{ $csClass = "colorscheme-dark" }}
+  {{ else if eq .Site.Params.colorScheme "auto" }}
+    {{ $csClass = "colorscheme-auto" }}
+  {{ end }}
+  <body class="preload-transitions {{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
+        onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
+  >
+    <div class="main-layout">
+      <div>
+
+        <main class="container">
+
+
+            {{ .Scratch.Set "go_back_url" "/" }}
+            {{ .Scratch.Set "go_back_label" "Home Page" }}
+            {{ partial "go_back.html" . }}
+                  <div className="newsletter-page">
+                    <img
+                      className="newsletter-page__logo"
+                      src=""
+                      alt="Weekly Dose of Dev Stuff Logo"
+                    />
+                    <div
+                      style="margin: 0 auto 30px auto; max-width: 1100px; width: 100%"
+                    >
+                      <h1 className="newsletter-page__title">
+                        Weekly Dose Of <br /> Software Engineering Stuff
+                      </h1>
+                    </div>
+                    <div className="newsletter-page__subtitle">
+                      <h3>
+                        This is a weekly newsletter with resources about stuff for techies
+                        which I found interesting.
+                      </h3>
+                    </div>
+                    <div className="newsletter-page__main-content">
+                      <p>
+                        I am a software developer based in Prague, working for a one tech
+                        company in the area of cloud backups.
+                      </p>
+                      <p>
+                        My day job involves TypeScript and because I am a note-taking nerd I
+                        keep lists of links and resources about it and{" "}
+                        <strong>other things that I found interesting</strong>. I decided to
+                        share it with everyone who might be interested.
+                      </p>
+                    </div>
+                    <div className="newsletter-page__form-wrapper">
+                      <form className="newsletter-page__form">
+                        <input
+                          type="email"
+                          name="email_address"
+                          placeholder="Email address"
+                          className="newsletter-page__input"
+                        />
+                        <button className="newsletter-page__button">Subscribe!</button>
+                      </form>
+                    </div>
+                    <div className="newsletter-page__main-content">
+                      <p>
+                        By subscribing to this newsletter you will also be the first to
+                        receive materials from my <a href="/blog">blog</a> and last
+                        updates of{" "}
+                        <a href="/typescript-book">my eBook about TypeScript</a>
+                      </p>
+                      <p>
+                        The goal of this newsletter is to share resources from my blog and
+                        the Internet that are related to topics that I found interesting as
+                        a software developer.
+                      </p>
+                      <p>
+                        The content related to TypeScript, Node, programming languages in
+                        general, testing for devs, writing and note-taking, useful resources
+                        about computer science, algorithms and data structures, interview
+                        preparation, software architecture, books, DevOps, and many many
+                        other interesting things.
+                      </p>
+                    </div>
+                  </div>            
+        </main>
+      </div>
+
+        {{ partial "footer.html" . }}
+    </div>
+
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/byte.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/byte.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+    {{ end }}
+
+    {{ if .Site.IsServer }}
+      {{ $script := resources.Get "js/subscription.js" }}
+      <script src="{{ $script.RelPermalink }}"></script>
+    {{ else }}
+      {{ $script := resources.Get "js/subscription.js" | minify | fingerprint }}
+      <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+    {{ end }}
+
+    {{ range .Site.Params.customJS }}
+      <script src="{{ . | relURL }}"></script>
+    {{ end }}
+
+    {{ template "_internal/google_analytics.html" . }}
+
+    {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
+      {{- partial "analytics/fathom" . -}}
+    {{ end }}
+
+    {{ if and .Site.Params.plausibleAnalytics .Site.Params.plausibleAnalytics.domain }}
+      {{- partial "analytics/plausible" . -}}
+    {{ end }}
+
+    {{ if and .Site.Params.goatCounter .Site.Params.goatCounter.code }}
+      {{- partial "analytics/goatcounter" . -}}
+    {{ end }}
+
+    {{ if and .Site.Params.cloudflare .Site.Params.cloudflare.token }}
+      {{- partial "analytics/cloudflare" . -}}
+    {{ end }}
+
+    {{ if and .Site.Params.matomo .Site.Params.matomo.serverURL }}
+      {{- partial "analytics/matomo" . -}}
+    {{ end }}
+
+    {{ if and .Site.Params.googleTagManager .Site.Params.googleTagManager.id }}
+      {{- partial "analytics/googletagmanager" . -}}
+    {{ end }}
+  </body>
+
+</html>
